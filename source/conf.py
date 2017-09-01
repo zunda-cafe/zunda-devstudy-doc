@@ -155,4 +155,7 @@ texinfo_documents = [
 ]
 
 extensions += ['sphinxcontrib.plantuml']
-plantuml = 'java -jar /Users/ono/Sphinx/zunda-devstudy-doc/plantuml/plantuml.jar'
+#plantuml = 'java -jar /Users/ono/Sphinx/zunda-devstudy-doc/plantuml/plantuml.jar'
+#plantuml = 'java -jar plantuml/plantuml.jar'
+import os
+plantuml = 'java -jar ' + os.path.abspath('../plantuml/plantuml.jar')
