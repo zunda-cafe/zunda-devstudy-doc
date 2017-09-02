@@ -3,3 +3,7 @@ python:
   - "3.6"
 install: "pip install -q -r requirements.txt"
 script: sphinx-build -nW -b html -d build/doctrees source build/html
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GH_TOKEN
