@@ -156,5 +156,6 @@ texinfo_documents = [
 
 extensions += ['sphinxcontrib.plantuml']
 import os
-plantuml = 'export LANG=ja_JP.UTF-8; java -jar ' + os.path.abspath('../plantuml/plantuml.jar') + ' -charset UTF-8'
+plantuml = 'java -jar ' + os.path.abspath('../plantuml/plantuml.jar')
+#plantuml = 'java -jar ' + os.path.abspath('../plantuml/plantuml.jar') + ' -charset UTF-8'
 #plantuml = 'java -jar /Users/foo/Sphinx/zunda-devstudy-doc/plantuml/plantuml.jar'
