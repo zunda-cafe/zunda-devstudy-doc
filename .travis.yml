@@ -1,6 +1,8 @@
 language: python
 python:
   - "3.6"
+before_install:
+ - "sudo apt-get install graphviz"
 install: "pip install -q -r requirements.txt"
 script: sphinx-build -nW -b html -d build/doctrees source build/html
 deploy:
