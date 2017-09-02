@@ -1,5 +1,5 @@
 language: python
 python:
-  - "2.7"
+  - "3.6"
 install: "pip install -q -r requirements.txt"
 script: sphinx-build -nW -b html -d build/doctrees source build/html
