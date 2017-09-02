@@ -1,7 +1,7 @@
-language: python - "2.7"
+language: python
+python:
+    - "3.5"
 
-# before_install will simply setup a conda enviroment for installing python packages, if you
-# have project dependencies it's usually recommended to go this route
 before_install:
     - wget http://repo.continuum.io/miniconda/Miniconda-latest-Linux-x86_64.sh -O miniconda.sh
     - chmod +x miniconda.sh
@@ -12,13 +12,11 @@ before_install:
     - sudo ln -s /run/shm /dev/shm
 
 install:
-    - conda install --yes python="2.7" sphinx
-#    - pip install --user travis-sphinx
-    - pip install -q -r requirements.txt
+    - conda install --yes python="3.5" sphinx
+    - pip install --user -q -r requirements.txt
 
 script:
-    - travis-sphinx -s source build
+    - travis-sphinx --source=source build
 
 after_success:
     - travis-sphinx deploy
-
