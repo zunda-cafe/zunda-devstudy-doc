@@ -77,6 +77,7 @@
 .. uml::
 
   left to right direction
+  skinparam defaultFontName IPAGothic
 
   A101 : ログイン画面
   B101 : 記事一覧画面
@@ -119,6 +120,8 @@
 
 .. uml::
 
+  skinparam defaultFontName IPAGothic
+
   @startuml
   salt
   {+
@@ -145,6 +148,8 @@
 :画面名: 記事一覧画面
 
 .. uml::
+
+  skinparam defaultFontName IPAGothic
 
   @startuml
   salt
@@ -179,6 +184,8 @@
 
 .. uml::
 
+  skinparam defaultFontName IPAGothic
+
   @startuml
   salt
   {+
@@ -212,6 +219,8 @@
 
 .. uml::
 
+  skinparam defaultFontName IPAGothic
+
   @startuml
   salt
   {+
@@ -238,6 +247,8 @@
 :画面名: 記事修正画面
 
 .. uml::
+
+  skinparam defaultFontName IPAGothic
 
   @startuml
   salt
@@ -266,6 +277,8 @@
 
 .. uml::
 
+  skinparam defaultFontName IPAGothic
+
   @startuml
   salt
   {+
@@ -292,6 +305,8 @@
 :画面名: 記事削除確認画面
 
 .. uml::
+
+  skinparam defaultFontName IPAGothic
 
   @startuml
   salt
