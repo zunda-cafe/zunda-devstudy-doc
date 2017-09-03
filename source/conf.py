@@ -160,4 +160,4 @@ import os
 plantuml = 'java -jar ' + os.path.abspath('../plantuml/plantuml.jar') + ' -charset UTF-8'
 #plantuml = 'java -jar /Users/foo/Sphinx/zunda-devstudy-doc/plantuml/plantuml.jar'
 
-source_encoding = 'shift_jis'
+#source_encoding = 'shift_jis'
