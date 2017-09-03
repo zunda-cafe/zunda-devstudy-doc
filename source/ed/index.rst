@@ -5,7 +5,9 @@
 .. toctree::
     :maxdepth: 2
 
-    entity
     use_case
+
+..
+    entity
     business_rule
     screen_design

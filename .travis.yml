@@ -3,13 +3,13 @@ addons:
     apt:
         packages:
             - graphviz
-env:
-    global:
-        - LANG=ja_JP.UTF-8
-        - LC_ALL=ja_JP.UTF-8
+# env:
+#     global:
+#         - LANG=ja_JP.UTF-8
+#         - LC_ALL=ja_JP.UTF-8
 python:
   - "3.6"
-before_install:
+# before_install:
 #  - "sudo apt-get install graphviz"
 install: "pip install -q -r requirements.txt"
 before_script:
