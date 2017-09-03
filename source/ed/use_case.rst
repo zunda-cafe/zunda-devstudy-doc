@@ -55,13 +55,13 @@
   actor :ユーザ: as User
 
   rectangle "ブログ" {
-    usecase (ログインする) as Login
-    usecase (記事を閲覧する) as ViewArticle
-    usecase (記事を投稿する) as EntryArticle
-    usecase (記事を修正する) as ModifyArticle
-    usecase (記事を削除する) as RemoveArticle
-    usecase (記事にコメントする) as EntryComment
-    usecase (ログアウトする) as Logout
+    usecase ("ログインする") as Login
+    usecase ("記事を閲覧する") as ViewArticle
+    usecase ("記事を投稿する") as EntryArticle
+    usecase ("記事を修正する") as ModifyArticle
+    usecase ("記事を削除する") as RemoveArticle
+    usecase ("記事にコメントする") as EntryComment
+    usecase ("ログアウトする") as Logout
     EntryArticle ..> Login : <<include>>
     ModifyArticle ..> Login : <<include>>
     RemoveArticle ..> Login : <<include>>
