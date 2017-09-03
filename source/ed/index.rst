@@ -1,13 +1,11 @@
 =================
-ŠO•”İŒv
+ï¿½Oï¿½ï¿½ï¿½İŒv
 =================
 
 .. toctree::
     :maxdepth: 2
 
-    use_case
-
-..
     entity
+    use_case
     business_rule
     screen_design
