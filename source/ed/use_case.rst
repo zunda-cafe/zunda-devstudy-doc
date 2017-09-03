@@ -50,6 +50,7 @@
   @startuml
   left to right direction
   skinparam packageStyle rect
+  skinparam defaultFontName Serif
 
   actor :閲覧者: as Visitor
   actor :ユーザ: as User
