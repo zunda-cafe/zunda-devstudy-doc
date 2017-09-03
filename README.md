@@ -2,7 +2,7 @@
 
 ## Sphinxをビルドするのための環境準備
 
-このリポジトリのSphinxでは、ドキュメントに各種 UML 図を埋め込むための Sphinx 拡張「PlantUML」使用しています。
+このリポジトリのSphinxでは、ドキュメントに各種 UML 図を埋め込むための Sphinx 拡張「PlantUML」を使用しています。
 PlantUMLについては以下のサイトを参照してください。
 
 * http://tweeeety.hateblo.jp/entry/2014/10/24/173359
@@ -13,11 +13,11 @@ PlantUMLについては以下のサイトを参照してください。
 
 http://sourceforge.net/projects/plantuml/files/plantuml.jar/download
 
-また、conf.py に以下を追加しています。
+また、plantuml呼び出しのためconf.py に以下を追加しています。
 
     extensions += ['sphinxcontrib.plantuml']
     import os
-    plantuml = 'java -jar ' + os.path.abspath('../plantuml/plantuml.jar')
+    plantuml = 'java -jar "' + os.path.abspath('../plantuml/plantuml.jar') + '" -charset UTF-8'
 
 さらに、シーケンス図以外の UML を使う場合には Graphvizが必要になります。
 GraphvizのインストールはMac/Windows/Linuxで異なりますので詳細はインターネットで検索してみてください。
@@ -29,6 +29,8 @@ GraphvizのインストールはMac/Windows/Linuxで異なりますので詳細�
 masterブランチにpushされたタイミングをTravisCIが検知してビルドが走ります。TravisCIのURLは以下の通り。
 
 * https://travis-ci.org/zunda-cafe/zunda-devstudy-doc
+
+[![Build Status](https://travis-ci.org/zunda-cafe/zunda-devstudy-doc.svg?branch=master)](https://travis-ci.org/zunda-cafe/zunda-devstudy-doc)
 
 GitHubとTravisCIの連携については以下のサイトが参考になります。
 
@@ -56,7 +58,7 @@ TravisCIにGitHubのアカウントでログインすると、所有している
       on:
         branch: master
 
-$GH_TOKEN は後述するGitHub Pages専用のgh-pagesブランチにTravisCIがpushするためのアクセストークンです。取得や設定方法は以下のサイトを参考にしてください。
+`$GH_TOKEN` は後述するGitHub Pages専用のgh-pagesブランチにTravisCIがpushするためのアクセストークンです。取得や設定方法は以下のサイトを参考にしてください。
 
 * http://qiita.com/myyasuda/items/5186fcee00e68ed1bb32
 

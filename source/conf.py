@@ -156,4 +156,4 @@ texinfo_documents = [
 
 extensions += ['sphinxcontrib.plantuml']
 import os
-plantuml = 'java -jar ' + os.path.abspath('../plantuml/plantuml.jar') + ' -charset UTF-8'
+plantuml = 'java -jar "' + os.path.abspath('../plantuml/plantuml.jar') + '" -charset UTF-8'
