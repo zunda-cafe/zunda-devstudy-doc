@@ -50,7 +50,6 @@
   @startuml
   left to right direction
   skinparam packageStyle rect
-  skinparam defaultFontName MS Gothic
 
   actor :閲覧者: as Visitor
   actor :ユーザ: as User
