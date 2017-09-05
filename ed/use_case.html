@@ -1,0 +1,609 @@
+
+
+<!doctype html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>ユースケース &#8212; zunda-devstudy-doc 1.0.0 ドキュメント</title>
+    <link rel="stylesheet" href="../_static/bizstyle.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '1.0.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/translations.js"></script>
+    <script type="text/javascript" src="../_static/bizstyle.js"></script>
+    <link rel="index" title="索引" href="../genindex.html" />
+    <link rel="search" title="検索" href="../search.html" />
+    <link rel="next" title="ビジネス定義ルール" href="business_rule.html" />
+    <link rel="prev" title="エンティティ" href="entity.html" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="_static/css3-mediaqueries.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>ナビゲーション</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="総合索引"
+             accesskey="I">索引</a></li>
+        <li class="right" >
+          <a href="business_rule.html" title="ビジネス定義ルール"
+             accesskey="N">次へ</a> |</li>
+        <li class="right" >
+          <a href="entity.html" title="エンティティ"
+             accesskey="P">前へ</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">zunda-devstudy-doc 1.0.0 ドキュメント</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="index.html" accesskey="U">外部設計</a> &#187;</li> 
+      </ul>
+    </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../index.html">目次</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">ユースケース</a><ul>
+<li><a class="reference internal" href="#id2">ユースケース一覧</a></li>
+<li><a class="reference internal" href="#id3">ユースケース図</a></li>
+<li><a class="reference internal" href="#id4">ユースケース仕様書</a><ul>
+<li><a class="reference internal" href="#id5">ログイン</a></li>
+<li><a class="reference internal" href="#id6">記事閲覧</a></li>
+<li><a class="reference internal" href="#id7">記事投稿</a></li>
+<li><a class="reference internal" href="#id8">記事修正</a></li>
+<li><a class="reference internal" href="#id9">記事削除</a></li>
+<li><a class="reference internal" href="#id10">コメント投稿</a></li>
+<li><a class="reference internal" href="#id11">ログアウト</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  <h4>前のトピックへ</h4>
+  <p class="topless"><a href="entity.html"
+                        title="前の章へ">エンティティ</a></p>
+  <h4>次のトピックへ</h4>
+  <p class="topless"><a href="business_rule.html"
+                        title="次の章へ">ビジネス定義ルール</a></p>
+  <div role="note" aria-label="source link">
+    <h3>このページ</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/ed/use_case.rst.txt"
+            rel="nofollow">ソースコードを表示</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>クイック検索</h3>
+    <form class="search" action="../search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="検索" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="id1">
+<h1>ユースケース<a class="headerlink" href="#id1" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<div class="section" id="id2">
+<h2>ユースケース一覧<a class="headerlink" href="#id2" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="20%" />
+<col width="20%" />
+<col width="20%" />
+<col width="40%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">ユースケースグループID</th>
+<th class="head">ユースケースグループ名</th>
+<th class="head">ユースケースID</th>
+<th class="head">ユースケース名</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>A</td>
+<td>ログイン</td>
+<td>A1</td>
+<td>ログインする</td>
+</tr>
+<tr class="row-odd"><td>B</td>
+<td>記事閲覧</td>
+<td>B1</td>
+<td>記事を閲覧する</td>
+</tr>
+<tr class="row-even"><td>C</td>
+<td>記事投稿</td>
+<td>C1</td>
+<td>記事を投稿する</td>
+</tr>
+<tr class="row-odd"><td>D</td>
+<td>記事修正</td>
+<td>D1</td>
+<td>記事を修正する</td>
+</tr>
+<tr class="row-even"><td>E</td>
+<td>記事削除</td>
+<td>E1</td>
+<td>記事を削除する</td>
+</tr>
+<tr class="row-odd"><td>F</td>
+<td>コメント投稿</td>
+<td>F1</td>
+<td>記事にコメントする</td>
+</tr>
+<tr class="row-even"><td>G</td>
+<td>ログアウト</td>
+<td>G1</td>
+<td>ログアウトする</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="id3">
+<h2>ユースケース図<a class="headerlink" href="#id3" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p class="plantuml">
+<img src="../_images/plantuml-0990e4b390ebd69d789e8fab6b0815d35ad9b3b1.png" alt="&#64;startuml
+left to right direction
+skinparam packageStyle rect
+skinparam defaultFontName IPAGothic
+
+actor :閲覧者: as Visitor
+actor :ユーザ: as User
+
+rectangle &quot;ブログ&quot; {
+  usecase (ログインする) as Login
+  usecase (記事を閲覧する) as ViewArticle
+  usecase (記事を投稿する) as EntryArticle
+  usecase (記事を修正する) as ModifyArticle
+  usecase (記事を削除する) as RemoveArticle
+  usecase (記事にコメントする) as EntryComment
+  usecase (ログアウトする) as Logout
+  EntryArticle ..&gt; Login : &lt;&lt;include&gt;&gt;
+  ModifyArticle ..&gt; Login : &lt;&lt;include&gt;&gt;
+  RemoveArticle ..&gt; Login : &lt;&lt;include&gt;&gt;
+  User --&gt; EntryArticle
+  User --&gt; ModifyArticle
+  User --&gt; RemoveArticle
+  User --&gt; EntryComment
+  Visitor --&gt; EntryComment
+  User --&gt; ViewArticle
+  Visitor --&gt; ViewArticle
+  User --&gt; Logout
+  Visitor --&gt; Logout
+}
+
+&#64;enduml" />
+</p>
+</div>
+<div class="section" id="id4">
+<h2>ユースケース仕様書<a class="headerlink" href="#id4" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<div class="section" id="id5">
+<h3>ログイン<a class="headerlink" href="#id5" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">概要:</th><td class="field-body"><p class="first">ユーザがログインする</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">アクター:</th><td class="field-body"><p class="first">ユーザ</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">関連システム:</th><td class="field-body"><p class="first">なし</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">事前条件:</th><td class="field-body"><p class="first">ログインしていないこと</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">事後条件:</th><td class="field-body"><p class="first">ログインされていること</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">ビジネスルール:</th><td class="field-body"><p class="first">なし</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">生成エンティティ:</th><td class="field-body"><p class="first">なし</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">参照エンティティ:</th><td class="field-body"><p class="first">ユーザ情報</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">更新エンティティ:</th><td class="field-body"><p class="first">なし</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">削除エンティティ:</th><td class="field-body"><p class="first">なし</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">関連ユースケース:</th><td class="field-body"><p class="first">なし</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">基本フロー:</th><td class="field-body"><ol class="first arabic simple">
+<li>ユーザはログイン画面を表示する。</li>
+<li>ユーザはユーザIDとパスワードを入力する。</li>
+<li>システムはユーザ情報を検索しユーザIDおよびパスワードの一致を確認する。</li>
+<li>システムは記事一覧画面を表示する。</li>
+</ol>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name" colspan="2">代替フロー（ユーザID、パスワードが一致しないとき）:</th></tr>
+<tr class="field-odd field"><td>&#160;</td><td class="field-body"><ol class="first last arabic simple">
+<li>システムはエラーメッセージを表示し、再入力を促す。</li>
+</ol>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="id6">
+<h3>記事閲覧<a class="headerlink" href="#id6" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">概要:</th><td class="field-body"><p class="first">閲覧者またはユーザが記事を閲覧する</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">アクター:</th><td class="field-body"><p class="first">ユーザ、閲覧者</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">関連システム:</th><td class="field-body"><p class="first">なし</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">事前条件:</th><td class="field-body"><p class="first">なし</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">事後条件:</th><td class="field-body"><p class="first">なし</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">ビジネスルール:</th><td class="field-body"><p class="first">なし</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">生成エンティティ:</th><td class="field-body"><p class="first">なし</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">参照エンティティ:</th><td class="field-body"><p class="first">記事、コメント</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">更新エンティティ:</th><td class="field-body"><p class="first">なし</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">削除エンティティ:</th><td class="field-body"><p class="first">なし</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">関連ユースケース:</th><td class="field-body"><p class="first">なし</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">基本フロー:</th><td class="field-body"><ol class="first last arabic simple">
+<li>ユーザは記事一覧画面を表示する。</li>
+<li>ユーザは記事一覧画面から詳細を見たい記事のタイトルをクリックする。</li>
+<li>システムは選択された記事の内容をコメントと共に記事詳細画面として表示する。</li>
+</ol>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="id7">
+<h3>記事投稿<a class="headerlink" href="#id7" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">概要:</th><td class="field-body"><p class="first">ユーザが記事を投稿する</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">アクター:</th><td class="field-body"><p class="first">ユーザ</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">関連システム:</th><td class="field-body"><p class="first">なし</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">事前条件:</th><td class="field-body"><p class="first">ログインしていること</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">事後条件:</th><td class="field-body"><p class="first">記事が保存されていること</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">ビジネスルール:</th><td class="field-body"><p class="first">なし</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">生成エンティティ:</th><td class="field-body"><p class="first">記事</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">参照エンティティ:</th><td class="field-body"><p class="first">なし</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">更新エンティティ:</th><td class="field-body"><p class="first">なし</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">削除エンティティ:</th><td class="field-body"><p class="first">なし</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">関連ユースケース:</th><td class="field-body"><p class="first">ログイン</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">基本フロー:</th><td class="field-body"><ol class="first arabic simple">
+<li>ユーザは記事一覧画面の「記事を投稿する」ボタンをクリックする。</li>
+<li>システムは記事投稿画面を表示する。</li>
+<li>ユーザは記事を入力し「投稿」ボタンをクリックする。</li>
+<li>システムは入力内容の検証を行い、記事投稿確認画面を表示する。</li>
+<li>ユーザは表示内容を確認し「確定」ボタンをクリックする。</li>
+<li>システムは記事を保存し、記事一覧画面を表示する。</li>
+</ol>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name" colspan="2">代替フロー（入力内容の検証がNGの場合）:</th></tr>
+<tr class="field-odd field"><td>&#160;</td><td class="field-body"><ol class="first last arabic simple">
+<li>システムはエラーメッセージを表示し、再入力を促す。</li>
+</ol>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="id8">
+<h3>記事修正<a class="headerlink" href="#id8" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">概要:</th><td class="field-body"><p class="first">ユーザが記事を修正する</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">アクター:</th><td class="field-body"><p class="first">ユーザ</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">関連システム:</th><td class="field-body"><p class="first">なし</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">事前条件:</th><td class="field-body"><p class="first">ログインしていること</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">事後条件:</th><td class="field-body"><p class="first">記事が修正されていること</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">ビジネスルール:</th><td class="field-body"><p class="first">なし</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">生成エンティティ:</th><td class="field-body"><p class="first">なし</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">参照エンティティ:</th><td class="field-body"><p class="first">なし</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">更新エンティティ:</th><td class="field-body"><p class="first">記事</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">削除エンティティ:</th><td class="field-body"><p class="first">なし</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">関連ユースケース:</th><td class="field-body"><p class="first">ログイン</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">基本フロー:</th><td class="field-body"><ol class="first arabic simple">
+<li>ユーザは記事一覧画面で修正したい記事のタイトルをクリックする。</li>
+<li>システムは記事詳細画面を表示する。</li>
+<li>システムはログインユーザが投稿した記事の場合「修正」ボタンを表示する。</li>
+<li>ユーザは記事詳細画面の「修正」ボタンをクリックする。</li>
+<li>システムは記事修正画面を保存された記事の内容で表示する。</li>
+<li>ユーザは記事を修正し「修正」ボタンをクリックする。</li>
+<li>システムは入力内容の検証を行い、記事修正確認画面を表示する。</li>
+<li>ユーザは表示内容を確認し「確定」ボタンをクリックする。</li>
+<li>システムは記事を保存し、記事一覧画面を表示する。</li>
+</ol>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name" colspan="2">代替フロー（入力内容の検証がNGの場合）:</th></tr>
+<tr class="field-odd field"><td>&#160;</td><td class="field-body"><ol class="first last arabic simple">
+<li>システムはエラーメッセージを表示し、再入力を促す。</li>
+</ol>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="id9">
+<h3>記事削除<a class="headerlink" href="#id9" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">概要:</th><td class="field-body"><p class="first">ユーザが記事を削除する</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">アクター:</th><td class="field-body"><p class="first">ユーザ</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">関連システム:</th><td class="field-body"><p class="first">なし</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">事前条件:</th><td class="field-body"><p class="first">ログインしていること</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">事後条件:</th><td class="field-body"><p class="first">記事が削除されていること</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">ビジネスルール:</th><td class="field-body"><p class="first">なし</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">生成エンティティ:</th><td class="field-body"><p class="first">なし</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">参照エンティティ:</th><td class="field-body"><p class="first">なし</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">更新エンティティ:</th><td class="field-body"><p class="first">なし</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">削除エンティティ:</th><td class="field-body"><p class="first">記事、コメント</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">関連ユースケース:</th><td class="field-body"><p class="first">ログイン</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">基本フロー:</th><td class="field-body"><ol class="first last arabic simple">
+<li>ユーザは記事一覧画面で削除したい記事のタイトルをクリックする。</li>
+<li>システムは記事詳細画面を表示する。</li>
+<li>システムはログインユーザが投稿した記事の場合「削除」ボタンを表示する。</li>
+<li>ユーザは記事詳細画面の「削除」ボタンをクリックする。</li>
+<li>システムは記事削除確認画面を表示する。</li>
+<li>ユーザは「削除」ボタンをクリックする。</li>
+<li>システムは記事と記事に紐づくコメントを削除する。</li>
+<li>システムは記事一覧画面を表示する。</li>
+</ol>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="id10">
+<h3>コメント投稿<a class="headerlink" href="#id10" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">概要:</th><td class="field-body"><p class="first">記事にコメントする</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">アクター:</th><td class="field-body"><p class="first">利用者（ユーザ、閲覧者）</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">関連システム:</th><td class="field-body"><p class="first">なし</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">事前条件:</th><td class="field-body"><p class="first">なし</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">事後条件:</th><td class="field-body"><p class="first">コメントが保存されていること</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">ビジネスルール:</th><td class="field-body"><p class="first">なし</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">生成エンティティ:</th><td class="field-body"><p class="first">コメント</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">参照エンティティ:</th><td class="field-body"><p class="first">記事、コメント</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">更新エンティティ:</th><td class="field-body"><p class="first">なし</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">削除エンティティ:</th><td class="field-body"><p class="first">なし</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">関連ユースケース:</th><td class="field-body"><p class="first">なし</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">基本フロー:</th><td class="field-body"><ol class="first last arabic simple">
+<li>利用者は記事一覧画面でコメントを投稿したい記事のタイトルをクリックする。</li>
+<li>システムは記事詳細画面で記事と保存されているコメントを表示する。</li>
+<li>ユーザは新規コメント欄にコメントを入力し「コメント投稿」ボタンをクリックする。</li>
+<li>システムはコメントが入力されていた場合、確認ダイアログを表示する。</li>
+<li>ユーザは「OK」ボタンをクリックする。</li>
+<li>システムはコメントを保存する。</li>
+<li>システムは記事詳細画面を再表示する。</li>
+</ol>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="id11">
+<h3>ログアウト<a class="headerlink" href="#id11" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">概要:</th><td class="field-body"><p class="first">ユーザがログアウトする</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">アクター:</th><td class="field-body"><p class="first">ユーザ</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">関連システム:</th><td class="field-body"><p class="first">なし</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">事前条件:</th><td class="field-body"><p class="first">ログインしていること</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">事後条件:</th><td class="field-body"><p class="first">ログアウトされていること</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">ビジネスルール:</th><td class="field-body"><p class="first">なし</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">生成エンティティ:</th><td class="field-body"><p class="first">なし</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">参照エンティティ:</th><td class="field-body"><p class="first">なし</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">更新エンティティ:</th><td class="field-body"><p class="first">なし</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">削除エンティティ:</th><td class="field-body"><p class="first">なし</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">関連ユースケース:</th><td class="field-body"><p class="first">なし</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">基本フロー:</th><td class="field-body"><ol class="first last arabic simple">
+<li>ユーザは記事一覧画面のログアウトボタンをクリックする。</li>
+<li>システムはログアウト処理を実行する。</li>
+<li>システムは記事一覧画面を再表示する。</li>
+</ol>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>ナビゲーション</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="総合索引"
+             >索引</a></li>
+        <li class="right" >
+          <a href="business_rule.html" title="ビジネス定義ルール"
+             >次へ</a> |</li>
+        <li class="right" >
+          <a href="entity.html" title="エンティティ"
+             >前へ</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">zunda-devstudy-doc 1.0.0 ドキュメント</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="index.html" >外部設計</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2017, zunda-cafe.
+      このドキュメントは <a href="http://sphinx-doc.org/">Sphinx</a> 1.6.3 で生成しました。
+    </div>
+  </body>
+</html>

@@ -1,0 +1,953 @@
+
+
+<!doctype html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>画面一覧 &#8212; zunda-devstudy-doc 1.0.0 ドキュメント</title>
+    <link rel="stylesheet" href="../_static/bizstyle.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '1.0.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/translations.js"></script>
+    <script type="text/javascript" src="../_static/bizstyle.js"></script>
+    <link rel="index" title="索引" href="../genindex.html" />
+    <link rel="search" title="検索" href="../search.html" />
+    <link rel="prev" title="ビジネス定義ルール" href="business_rule.html" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="_static/css3-mediaqueries.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>ナビゲーション</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="総合索引"
+             accesskey="I">索引</a></li>
+        <li class="right" >
+          <a href="business_rule.html" title="ビジネス定義ルール"
+             accesskey="P">前へ</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">zunda-devstudy-doc 1.0.0 ドキュメント</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="index.html" accesskey="U">外部設計</a> &#187;</li> 
+      </ul>
+    </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../index.html">目次</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">画面一覧</a></li>
+<li><a class="reference internal" href="#id2">画面遷移図</a></li>
+<li><a class="reference internal" href="#id3">画面仕様</a><ul>
+<li><a class="reference internal" href="#id4">ログイン画面</a></li>
+<li><a class="reference internal" href="#id5">記事一覧画面</a></li>
+<li><a class="reference internal" href="#id6">記事詳細画面</a></li>
+<li><a class="reference internal" href="#id7">記事投稿画面</a></li>
+<li><a class="reference internal" href="#id8">記事修正画面</a></li>
+<li><a class="reference internal" href="#id9">記事修正確認画面</a></li>
+<li><a class="reference internal" href="#id10">記事削除確認画面</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>前のトピックへ</h4>
+  <p class="topless"><a href="business_rule.html"
+                        title="前の章へ">ビジネス定義ルール</a></p>
+  <div role="note" aria-label="source link">
+    <h3>このページ</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/ed/screen_design.rst.txt"
+            rel="nofollow">ソースコードを表示</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>クイック検索</h3>
+    <form class="search" action="../search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="検索" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="id1">
+<h1>画面一覧<a class="headerlink" href="#id1" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="4%" />
+<col width="14%" />
+<col width="14%" />
+<col width="7%" />
+<col width="18%" />
+<col width="25%" />
+<col width="18%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">No</th>
+<th class="head">ユースケースグループ名</th>
+<th class="head">ユースケース名</th>
+<th class="head">画面ID</th>
+<th class="head">画面名</th>
+<th class="head">説明</th>
+<th class="head">備考</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>1</td>
+<td>ログイン</td>
+<td>ログインする</td>
+<td>A101</td>
+<td>ログイン画面</td>
+<td>ログインする画面</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>2</td>
+<td>記事閲覧</td>
+<td>記事を閲覧する</td>
+<td>B101</td>
+<td>記事一覧画面</td>
+<td>全ての記事のタイトルを表示する画面</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>3</td>
+<td>記事閲覧、コメント投稿</td>
+<td>記事を閲覧する、コメントを投稿する</td>
+<td>B102</td>
+<td>記事詳細画面</td>
+<td>特定の記事の本文やコメントを表示、コメントを投稿する画面</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>4</td>
+<td>記事投稿</td>
+<td>記事を投稿する</td>
+<td>C101</td>
+<td>記事投稿画面</td>
+<td>投稿する記事を入力する画面</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>5</td>
+<td>記事投稿</td>
+<td>記事を投稿する</td>
+<td>C102</td>
+<td>記事投稿確認画面</td>
+<td>投稿する記事を確認する画面</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>6</td>
+<td>記事修正</td>
+<td>記事を修正する</td>
+<td>D101</td>
+<td>記事修正画面</td>
+<td>既存の記事を修正する画面</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>7</td>
+<td>記事修正</td>
+<td>記事を修正する</td>
+<td>D102</td>
+<td>記事修正確認画面</td>
+<td>記事の修正を確認する画面</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>8</td>
+<td>記事削除</td>
+<td>記事を削除する</td>
+<td>E101</td>
+<td>記事削除確認画面</td>
+<td>既存の記事を削除する画面</td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="id2">
+<h1>画面遷移図<a class="headerlink" href="#id2" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<p class="plantuml">
+<img src="../_images/plantuml-1e954471ee62cd2c107560ef69369f814b637419.png" alt="left to right direction
+skinparam defaultFontName IPAGothic
+
+A101 : ログイン画面
+B101 : 記事一覧画面
+B102 : 記事詳細画面
+C101 : 記事投稿画面
+C102 : 記事投稿確認画面
+D101 : 記事修正画面
+D102 : 記事修正確認画面
+E101 : 記事削除確認画面
+
+[*] --&gt; A101
+A101 --&gt; B101 : ログイン
+B101 --&gt; B102 : 記事タイトル
+B101 --&gt; C101 : 記事を投稿する
+C101 --&gt; C102 : 投稿
+C102 --&gt; B101 : 確定
+B102 --&gt; D101 : 修正
+D101 --&gt; D102 : 修正
+D102 --&gt; B102 : 確定
+B102 --&gt; E101 : 削除
+E101 --&gt; B101 : 削除
+B102 --&gt; B102 : コメント投稿
+B102 --&gt; B101 : 一覧へ戻る
+C101 --&gt; B101 : 戻る
+C102 --&gt; C101 : 戻る
+D101 --&gt; B102 : 戻る
+D102 --&gt; D101 : 戻る
+E101 --&gt; B102 : 戻る
+B101 --&gt; B101 : ログアウト" />
+</p>
+</div>
+<div class="section" id="id3">
+<h1>画面仕様<a class="headerlink" href="#id3" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<div class="section" id="id4">
+<h2>ログイン画面<a class="headerlink" href="#id4" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">画面ID:</th><td class="field-body">A101</td>
+</tr>
+<tr class="field-even field"><th class="field-name">画面名:</th><td class="field-body">ログイン画面</td>
+</tr>
+</tbody>
+</table>
+<p class="plantuml">
+<img src="../_images/plantuml-20cbb78bb9ad6d2d85d1d9f9c023ab4b4a53d2c6.png" alt="skinparam defaultFontName IPAGothic
+
+&#64;startuml
+salt
+{+
+  |　|Zunda-Cafe Blog   |*|*|.
+  |　| --- |*|*|.
+  |　|ユーザID|&quot;foo&#64;bar.ne.jp         &quot;|.| (1)
+  |　|パスワード|&quot;***********         &quot;|.| (2)
+  |　| --- |*|*|.
+  |　|{[ログイン]|[リセット]}|*|*| (3)(4)
+}
+&#64;enduml" />
+</p>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="5%" />
+<col width="18%" />
+<col width="18%" />
+<col width="5%" />
+<col width="5%" />
+<col width="5%" />
+<col width="5%" />
+<col width="5%" />
+<col width="36%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head stub">No</th>
+<th class="head">論理項目名</th>
+<th class="head">論理項目種別</th>
+<th class="head">入力</th>
+<th class="head">出力</th>
+<th class="head">必須</th>
+<th class="head">桁最小</th>
+<th class="head">桁最大</th>
+<th class="head">文字種別</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><th class="stub">1</th>
+<td>ユーザID</td>
+<td>テキストボックス</td>
+<td>○</td>
+<td>ー</td>
+<td>○</td>
+<td>1</td>
+<td>64</td>
+<td>半角文字</td>
+</tr>
+<tr class="row-odd"><th class="stub">2</th>
+<td>パスワード</td>
+<td>テキストボックス</td>
+<td>○</td>
+<td>ー</td>
+<td>○</td>
+<td>1</td>
+<td>64</td>
+<td>半角文字</td>
+</tr>
+<tr class="row-even"><th class="stub">3</th>
+<td>ログイン</td>
+<td>ボタン</td>
+<td>ー</td>
+<td>ー</td>
+<td>ー</td>
+<td>ー</td>
+<td>ー</td>
+<td>ー</td>
+</tr>
+<tr class="row-odd"><th class="stub">4</th>
+<td>リセット</td>
+<td>ボタン</td>
+<td>ー</td>
+<td>ー</td>
+<td>ー</td>
+<td>ー</td>
+<td>ー</td>
+<td>ー</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="id5">
+<h2>記事一覧画面<a class="headerlink" href="#id5" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">画面ID:</th><td class="field-body">B101</td>
+</tr>
+<tr class="field-even field"><th class="field-name">画面名:</th><td class="field-body">記事一覧画面</td>
+</tr>
+</tbody>
+</table>
+<p class="plantuml">
+<img src="../_images/plantuml-d87b6d998fa77eb0af20755536a8b022e99e9bd4.png" alt="skinparam defaultFontName IPAGothic
+
+&#64;startuml
+salt
+{+
+  |　|Zunda-Cafe Blog   |*|*|.
+  |　|[記事を投稿する]|*|*| (1)
+  |　| --- |*|*|.
+  |　|記事タイトル|*|.| (2)
+  |　|記事タイトル|*|.| (2)
+  |　|記事タイトル|*|.| (2)
+  |　|記事タイトル|*|.| (2)
+  |　|記事タイトル|*|.| (2)
+  |　| --- |*|*|.
+  |　|[ログアウト]|*|*| (3)
+}
+&#64;enduml" />
+</p>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="5%" />
+<col width="18%" />
+<col width="18%" />
+<col width="5%" />
+<col width="5%" />
+<col width="5%" />
+<col width="5%" />
+<col width="5%" />
+<col width="36%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head stub">No</th>
+<th class="head">論理項目名</th>
+<th class="head">論理項目種別</th>
+<th class="head">入力</th>
+<th class="head">出力</th>
+<th class="head">必須</th>
+<th class="head">桁最小</th>
+<th class="head">桁最大</th>
+<th class="head">文字種別</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><th class="stub">1</th>
+<td>記事を投稿する</td>
+<td>ボタン</td>
+<td>ー</td>
+<td>ー</td>
+<td>ー</td>
+<td>ー</td>
+<td>ー</td>
+<td>ー</td>
+</tr>
+<tr class="row-odd"><th class="stub">2</th>
+<td>記事タイトル</td>
+<td>リンク</td>
+<td>ー</td>
+<td>○</td>
+<td>ー</td>
+<td>ー</td>
+<td>ー</td>
+<td>ー</td>
+</tr>
+<tr class="row-even"><th class="stub">3</th>
+<td>ログアウト</td>
+<td>ボタン</td>
+<td>ー</td>
+<td>ー</td>
+<td>ー</td>
+<td>ー</td>
+<td>ー</td>
+<td>ー</td>
+</tr>
+</tbody>
+</table>
+<p>全ての記事の記事タイトルを表示する。</p>
+</div>
+<div class="section" id="id6">
+<h2>記事詳細画面<a class="headerlink" href="#id6" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">画面ID:</th><td class="field-body">B102</td>
+</tr>
+<tr class="field-even field"><th class="field-name">画面名:</th><td class="field-body">記事詳細画面</td>
+</tr>
+</tbody>
+</table>
+<p class="plantuml">
+<img src="../_images/plantuml-4886818f38083b9f61df4cac487d3ca86dc5c9b2.png" alt="skinparam defaultFontName IPAGothic
+
+&#64;startuml
+salt
+{+
+  |　|Zunda-Cafe Blog   |*|*|.
+  |　| --- |*|*|.
+  |　|タイトル|最近の天気について           |.| (1)
+  |　|本文|昨日も雨、今日も雨…             |.| (2)
+  |　| --- |*|*|.
+  |　|コメントです|*|*| (3)
+  |　|コメントです|*|*| (3)
+  |　|&quot;新しいコメントを入力します         &quot;|*|*| (4)
+  |　| --- |*|*|.
+  |　|{[コメント投稿]|[修正]|[削除]|[一覧に戻る]}|*|*| (5)(6)(7)(8)
+}
+&#64;enduml" />
+</p>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="5%" />
+<col width="18%" />
+<col width="18%" />
+<col width="5%" />
+<col width="5%" />
+<col width="5%" />
+<col width="5%" />
+<col width="5%" />
+<col width="36%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head stub">No</th>
+<th class="head">論理項目名</th>
+<th class="head">論理項目種別</th>
+<th class="head">入力</th>
+<th class="head">出力</th>
+<th class="head">必須</th>
+<th class="head">桁最小</th>
+<th class="head">桁最大</th>
+<th class="head">文字種別</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><th class="stub">1</th>
+<td>記事タイトル</td>
+<td>テキスト</td>
+<td>ー</td>
+<td>○</td>
+<td>ー</td>
+<td>ー</td>
+<td>ー</td>
+<td>ー</td>
+</tr>
+<tr class="row-odd"><th class="stub">2</th>
+<td>記事本文</td>
+<td>テキスト</td>
+<td>ー</td>
+<td>○</td>
+<td>ー</td>
+<td>ー</td>
+<td>ー</td>
+<td>ー</td>
+</tr>
+<tr class="row-even"><th class="stub">3</th>
+<td>コメント</td>
+<td>テキスト</td>
+<td>ー</td>
+<td>○</td>
+<td>ー</td>
+<td>ー</td>
+<td>ー</td>
+<td>ー</td>
+</tr>
+<tr class="row-odd"><th class="stub">4</th>
+<td>新規コメント</td>
+<td>テキストエリア</td>
+<td>○</td>
+<td>ー</td>
+<td>ー</td>
+<td>1</td>
+<td>1024</td>
+<td>ー</td>
+</tr>
+<tr class="row-even"><th class="stub">5</th>
+<td>コメント投稿</td>
+<td>ボタン</td>
+<td>ー</td>
+<td>ー</td>
+<td>ー</td>
+<td>ー</td>
+<td>ー</td>
+<td>ー</td>
+</tr>
+<tr class="row-odd"><th class="stub">6</th>
+<td>修正</td>
+<td>ボタン</td>
+<td>ー</td>
+<td>ー</td>
+<td>ー</td>
+<td>ー</td>
+<td>ー</td>
+<td>ー</td>
+</tr>
+<tr class="row-even"><th class="stub">7</th>
+<td>削除</td>
+<td>ボタン</td>
+<td>ー</td>
+<td>ー</td>
+<td>ー</td>
+<td>ー</td>
+<td>ー</td>
+<td>ー</td>
+</tr>
+<tr class="row-odd"><th class="stub">8</th>
+<td>一覧に戻る</td>
+<td>ボタン</td>
+<td>ー</td>
+<td>ー</td>
+<td>ー</td>
+<td>ー</td>
+<td>ー</td>
+<td>ー</td>
+</tr>
+</tbody>
+</table>
+<p>「修正」「削除」ボタンはログインユーザが投稿した記事の場合のみ表示する。</p>
+</div>
+<div class="section" id="id7">
+<h2>記事投稿画面<a class="headerlink" href="#id7" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">画面ID:</th><td class="field-body">C101</td>
+</tr>
+<tr class="field-even field"><th class="field-name">画面名:</th><td class="field-body">記事投稿画面</td>
+</tr>
+</tbody>
+</table>
+<p class="plantuml">
+<img src="../_images/plantuml-a5b2bbd11c31a6de2c80e557d05cb8197e5cac9e.png" alt="skinparam defaultFontName IPAGothic
+
+&#64;startuml
+salt
+{+
+  |　|Zunda-Cafe Blog   |*|*|.
+  |　| --- |*|*|.
+  |　|タイトル|&quot;最近の天気について           &quot;|.| (1)
+  |　|本文|&quot;昨日も雨、今日も雨…             &quot;|.| (2)
+  |　| --- |*|*|.
+  |　|{[投稿]|[戻る]}|*|*| (3)(4)
+}
+&#64;enduml" />
+</p>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="5%" />
+<col width="18%" />
+<col width="18%" />
+<col width="5%" />
+<col width="5%" />
+<col width="5%" />
+<col width="5%" />
+<col width="5%" />
+<col width="36%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head stub">No</th>
+<th class="head">論理項目名</th>
+<th class="head">論理項目種別</th>
+<th class="head">入力</th>
+<th class="head">出力</th>
+<th class="head">必須</th>
+<th class="head">桁最小</th>
+<th class="head">桁最大</th>
+<th class="head">文字種別</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><th class="stub">1</th>
+<td>記事タイトル</td>
+<td>テキストボックス</td>
+<td>○</td>
+<td>ー</td>
+<td>○</td>
+<td>1</td>
+<td>64</td>
+<td>ー</td>
+</tr>
+<tr class="row-odd"><th class="stub">2</th>
+<td>記事本文</td>
+<td>テキストエリア</td>
+<td>○</td>
+<td>ー</td>
+<td>○</td>
+<td>1</td>
+<td>1024</td>
+<td>ー</td>
+</tr>
+<tr class="row-even"><th class="stub">3</th>
+<td>投稿</td>
+<td>ボタン</td>
+<td>ー</td>
+<td>ー</td>
+<td>ー</td>
+<td>ー</td>
+<td>ー</td>
+<td>ー</td>
+</tr>
+<tr class="row-odd"><th class="stub">4</th>
+<td>戻る</td>
+<td>ボタン</td>
+<td>ー</td>
+<td>ー</td>
+<td>ー</td>
+<td>ー</td>
+<td>ー</td>
+<td>ー</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="id8">
+<h2>記事修正画面<a class="headerlink" href="#id8" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">画面ID:</th><td class="field-body">D101</td>
+</tr>
+<tr class="field-even field"><th class="field-name">画面名:</th><td class="field-body">記事修正画面</td>
+</tr>
+</tbody>
+</table>
+<p class="plantuml">
+<img src="../_images/plantuml-2d3731d1307b8451a0d208aaab4ee069158e9dd4.png" alt="skinparam defaultFontName IPAGothic
+
+&#64;startuml
+salt
+{+
+  |　|Zunda-Cafe Blog   |*|*|.
+  |　| --- |*|*|.
+  |　|タイトル|&quot;最近の天気について           &quot;|.| (1)
+  |　|本文|&quot;昨日も雨、今日も雨…             &quot;|.| (2)
+  |　| --- |*|*|.
+  |　|{[修正]|[戻る]}|*|*| (3)(4)
+}
+&#64;enduml" />
+</p>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="5%" />
+<col width="18%" />
+<col width="18%" />
+<col width="5%" />
+<col width="5%" />
+<col width="5%" />
+<col width="5%" />
+<col width="5%" />
+<col width="36%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head stub">No</th>
+<th class="head">論理項目名</th>
+<th class="head">論理項目種別</th>
+<th class="head">入力</th>
+<th class="head">出力</th>
+<th class="head">必須</th>
+<th class="head">桁最小</th>
+<th class="head">桁最大</th>
+<th class="head">文字種別</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><th class="stub">1</th>
+<td>記事タイトル</td>
+<td>テキストボックス</td>
+<td>○</td>
+<td>○</td>
+<td>○</td>
+<td>1</td>
+<td>64</td>
+<td>ー</td>
+</tr>
+<tr class="row-odd"><th class="stub">2</th>
+<td>記事本文</td>
+<td>テキストエリア</td>
+<td>○</td>
+<td>○</td>
+<td>○</td>
+<td>1</td>
+<td>1024</td>
+<td>ー</td>
+</tr>
+<tr class="row-even"><th class="stub">3</th>
+<td>修正</td>
+<td>ボタン</td>
+<td>ー</td>
+<td>ー</td>
+<td>ー</td>
+<td>ー</td>
+<td>ー</td>
+<td>ー</td>
+</tr>
+<tr class="row-odd"><th class="stub">4</th>
+<td>戻る</td>
+<td>ボタン</td>
+<td>ー</td>
+<td>ー</td>
+<td>ー</td>
+<td>ー</td>
+<td>ー</td>
+<td>ー</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="id9">
+<h2>記事修正確認画面<a class="headerlink" href="#id9" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">画面ID:</th><td class="field-body">D102</td>
+</tr>
+<tr class="field-even field"><th class="field-name">画面名:</th><td class="field-body">記事修正確認画面</td>
+</tr>
+</tbody>
+</table>
+<p class="plantuml">
+<img src="../_images/plantuml-656a7151998cf6290e9cf56abae9f6dff74cf5f8.png" alt="skinparam defaultFontName IPAGothic
+
+&#64;startuml
+salt
+{+
+  |　|Zunda-Cafe Blog   |*|*|.
+  |　| --- |*|*|.
+  |　|タイトル|最近の天気について           |.| (1)
+  |　|本文|昨日も雨、今日も雨…             |.| (2)
+  |　| --- |*|*|.
+  |　|{[確定]|[戻る]}|*|*| (3)(4)
+}
+&#64;enduml" />
+</p>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="5%" />
+<col width="18%" />
+<col width="18%" />
+<col width="5%" />
+<col width="5%" />
+<col width="5%" />
+<col width="5%" />
+<col width="5%" />
+<col width="36%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head stub">No</th>
+<th class="head">論理項目名</th>
+<th class="head">論理項目種別</th>
+<th class="head">入力</th>
+<th class="head">出力</th>
+<th class="head">必須</th>
+<th class="head">桁最小</th>
+<th class="head">桁最大</th>
+<th class="head">文字種別</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><th class="stub">1</th>
+<td>記事タイトル</td>
+<td>テキスト</td>
+<td>ー</td>
+<td>○</td>
+<td>ー</td>
+<td>ー</td>
+<td>ー</td>
+<td>ー</td>
+</tr>
+<tr class="row-odd"><th class="stub">2</th>
+<td>記事本文</td>
+<td>テキスト</td>
+<td>ー</td>
+<td>○</td>
+<td>ー</td>
+<td>ー</td>
+<td>ー</td>
+<td>ー</td>
+</tr>
+<tr class="row-even"><th class="stub">3</th>
+<td>確定</td>
+<td>ボタン</td>
+<td>ー</td>
+<td>ー</td>
+<td>ー</td>
+<td>ー</td>
+<td>ー</td>
+<td>ー</td>
+</tr>
+<tr class="row-odd"><th class="stub">4</th>
+<td>戻る</td>
+<td>ボタン</td>
+<td>ー</td>
+<td>ー</td>
+<td>ー</td>
+<td>ー</td>
+<td>ー</td>
+<td>ー</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="id10">
+<h2>記事削除確認画面<a class="headerlink" href="#id10" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">画面ID:</th><td class="field-body">E101</td>
+</tr>
+<tr class="field-even field"><th class="field-name">画面名:</th><td class="field-body">記事削除確認画面</td>
+</tr>
+</tbody>
+</table>
+<p class="plantuml">
+<img src="../_images/plantuml-b28d2995a72a111bc10842ce120668a5bed647d9.png" alt="skinparam defaultFontName IPAGothic
+
+&#64;startuml
+salt
+{+
+  |　|Zunda-Cafe Blog   |*|*|.
+  |　| --- |*|*|.
+  |　|タイトル|最近の天気について           |.| (1)
+  |　|本文|昨日も雨、今日も雨…             |.| (2)
+  |　| --- |*|*|.
+  |　|{[削除]|[戻る]}|*|*| (3)(4)
+}
+&#64;enduml" />
+</p>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="5%" />
+<col width="18%" />
+<col width="18%" />
+<col width="5%" />
+<col width="5%" />
+<col width="5%" />
+<col width="5%" />
+<col width="5%" />
+<col width="36%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head stub">No</th>
+<th class="head">論理項目名</th>
+<th class="head">論理項目種別</th>
+<th class="head">入力</th>
+<th class="head">出力</th>
+<th class="head">必須</th>
+<th class="head">桁最小</th>
+<th class="head">桁最大</th>
+<th class="head">文字種別</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><th class="stub">1</th>
+<td>記事タイトル</td>
+<td>テキスト</td>
+<td>ー</td>
+<td>○</td>
+<td>ー</td>
+<td>ー</td>
+<td>ー</td>
+<td>ー</td>
+</tr>
+<tr class="row-odd"><th class="stub">2</th>
+<td>記事本文</td>
+<td>テキスト</td>
+<td>ー</td>
+<td>○</td>
+<td>ー</td>
+<td>ー</td>
+<td>ー</td>
+<td>ー</td>
+</tr>
+<tr class="row-even"><th class="stub">3</th>
+<td>削除</td>
+<td>ボタン</td>
+<td>ー</td>
+<td>ー</td>
+<td>ー</td>
+<td>ー</td>
+<td>ー</td>
+<td>ー</td>
+</tr>
+<tr class="row-odd"><th class="stub">4</th>
+<td>戻る</td>
+<td>ボタン</td>
+<td>ー</td>
+<td>ー</td>
+<td>ー</td>
+<td>ー</td>
+<td>ー</td>
+<td>ー</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>ナビゲーション</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="総合索引"
+             >索引</a></li>
+        <li class="right" >
+          <a href="business_rule.html" title="ビジネス定義ルール"
+             >前へ</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">zunda-devstudy-doc 1.0.0 ドキュメント</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="index.html" >外部設計</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2017, zunda-cafe.
+      このドキュメントは <a href="http://sphinx-doc.org/">Sphinx</a> 1.6.3 で生成しました。
+    </div>
+  </body>
+</html>
